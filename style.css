@@ -1,0 +1,415 @@
+h1 {
+  font-size: 4rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;}
+
+p {
+  font-size: 1.5rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+a:hover{
+    color: orange;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navbar .toggle_btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color: #871400;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    margin-left: 1rem;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    color: white;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+/*Dropdown Menu */
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right:2rem;
+    top:60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Header */
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+  color: white;
+  background: #202731;
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding-top: 100px;
+}
+
+.red {
+  background: #dd3f31;
+}
+
+.header {
+  background: #0f0f10;
+}
+
+/* Content Styling */
+
+.website-development {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+  }
+  
+  .website-development h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+  }
+  
+  .website-development p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .website-development ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .website-development li {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .website-development a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .website-development a:hover {
+    color: orange;
+  }
+
+/*Service Styling*/
+
+.services {
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .services h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .service {
+    margin-bottom: 3rem;
+  }
+  
+  .service img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .service h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+  }
+  
+  .service p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Contact Styling */
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #0f0f10;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .contact-form h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    background: #202731;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+  }
+  
+  .contact-form button {
+    background-color: #871400;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: scale 0.2s ease;
+  }
+  
+  .contact-form button:hover {
+    scale: 1.05;
+  }
+  
+  .contact-form button:active {
+    scale: 0.95;
+  }
+  
+  
+/* Footer Styling */
+footer {
+    position: relative;
+    background: #dd3f31;
+    color: white;
+    padding: 3rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer-section {
+    width: 300px;
+    margin: 0 1.5rem;
+  }
+  
+  .footer-section h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }  
+
+  .footer-bottom {
+    margin-top: 2rem;
+  }
+/* Curved bg with SVG via https://www.shapedivider.app/ */
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(103% + 1.3px);
+  height: 262px;
+}
+
+.wave .shape-fill {
+  fill: hsl(240, 3%, 6%);
+}
+/* SVG background image via https://haikei.app/ */
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url('svg/layer1.svg');
+}
+.layer2 {
+  background-image: url('svg/layer2.svg');
+}
+
+.waves {
+    background-image: ('svg/waves.svg') ;
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+/* Responsive Design */
+/* Mobile devices */
+@media (max-width: 767px) {
+    h1 {
+      font-size: 3rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    p {
+      font-size: 1.2rem;
+    }
+  
+    .navbar .toggle_btn {
+      display: block;
+    }
+  
+    .navbar .links {
+      display: none;
+    }
+  
+    .dropdown_menu {
+      top: 50px;
+    }
+  }
+  
+  /* Tablets and small desktop screens */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  
+    h2 {
+      font-size: 2.2rem;
+    }
+  
+    p {
+      font-size: 1.3rem;
+    }
+  
+    .navbar .links {
+      gap: 1rem;
+    }
+  }
+  
+  /* Large desktop screens */
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 4rem;
+    }
+  
+    h2 {
+      font-size: 2.5rem;
+    }
+  
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  
